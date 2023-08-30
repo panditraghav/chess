@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fcedca;
+}
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 560px;
+  height: 560px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square.light {
+  background-color: #ffce9e;
+}
+.square.dark {
+  background-color: #d18b47;
+}
+
+.piece-image {
+  height: 65px;
+  width: auto;
+}
