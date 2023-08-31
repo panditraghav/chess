@@ -19,21 +19,28 @@ body {
   height: 560px;
 }
 
-.square {
+[data-square=""] {
   width: 70px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.square.light {
+[data-square=""].light {
   background-color: #ffce9e;
 }
-.square.dark {
+[data-square=""].dark {
   background-color: #d18b47;
 }
 
-.piece-image {
+[data-piece=""] {
+  position: absolute;
+}
+[data-piece-animate="true"] {
+  transition: all 0.4s ease-in-out;
+}
+
+[data-piece=""] > img {
   height: 65px;
   width: auto;
 }
